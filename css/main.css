@@ -25,9 +25,25 @@ html {
 }
 
 .banner {
-
+  display: block;
+  max-height: 460px;
+  position: relative;
+  overflow: hidden;
 }
 
 .banner-content {
+  color: #fff;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner {
+    max-height: 500px;
+  }
 
 }
